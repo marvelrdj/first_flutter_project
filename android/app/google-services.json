@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "19016642342",
+    "project_id": "paradisefood2",
+    "storage_bucket": "paradisefood2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19016642342:android:944d9c9a98bc96f2445be7",
+        "android_client_info": {
+          "package_name": "com.example.sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19016642342-p90r8on9hata4pvpqsupkdmm3fvqnvns.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY_8fVrE3F0sWvHi7MyxWLwE_FXa-S8pE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19016642342-p90r8on9hata4pvpqsupkdmm3fvqnvns.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
