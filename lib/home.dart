@@ -1,25 +1,26 @@
-import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter/material.dart';
 import 'package:sample/coupons.dart';
 // ignore: unused_import
 import 'package:sample/veg.dart';
-// ignore: unused_import
-import 'login.dart';
+
 // ignore: unused_import
 import 'biriyani.dart';
-import 'porota.dart';
-import 'friedrice.dart';
-import 'shawarma.dart';
-import 'pizza.dart';
 import 'burger.dart';
+import 'changepassword.dart';
+import 'friedrice.dart';
 import 'grilled.dart';
 import 'juice.dart';
-// ignore: duplicate_import, unused_import
-import 'veg.dart';
+// ignore: unused_import
+import 'login.dart';
+import 'myaccount.dart';
 // ignore: unused_import
 import 'non-veg.dart';
-import 'changepassword.dart';
-import 'myaccount.dart';
+import 'pizza.dart';
+import 'porota.dart';
+import 'shawarma.dart';
+// ignore: duplicate_import, unused_import
+import 'veg.dart';
 import 'view/cardview.dart';
 
 class home extends StatefulWidget {
@@ -48,141 +49,144 @@ class _homeState extends State<home> {
         drawer: Drawer(
           child: Container(
             // Set the desired background color for the Column
-            child: Column(
-              children: <Widget>[
-                UserAccountsDrawerHeader(
-                  accountName: Text('SriHari'),
-                  accountEmail: Text('srihari143@gmail.com'),
-                  currentAccountPicture: CircleAvatar(
-                    radius: 50,
-                    backgroundImage: AssetImage('assets/naruto1.jpg'),
-                  ),
-                ), // Set the desired radius of the circle
+            child: SingleChildScrollView(
+              child: Column(
+                children: <Widget>[
+                  UserAccountsDrawerHeader(
+                    accountName: Text('SriHari'),
+                    accountEmail: Text('srihari143@gmail.com'),
+                    currentAccountPicture: CircleAvatar(
+                      radius: 50,
+                      backgroundImage: AssetImage('assets/naruto1.jpg'),
+                    ),
+                  ), // Set the desired radius of the circle
 
-                Divider(
-                  height: 2.0,
-                ),
-                ListTile(
-                    title: Text('My Account'),
-                    leading: Icon(Icons.menu),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => account()),
-                      );
-                    }),
-                Divider(
-                  height: 2.0,
-                ),
-                ListTile(
-                    title: Text('Your order'),
-                    leading: Icon(Icons.arrow_outward_rounded),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => pizza()),
-                      );
-                    }),
-                Divider(
-                  height: 2.0,
-                ),
-                ListTile(
-                    title: Text('Coupons'),
-                    leading: Icon(Icons.local_offer),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => coupons()),
-                      );
-                    }),
-                Divider(
-                  height: 2.0,
-                ),
-                ListTile(
-                    title: Text('Favourite order'),
-                    leading: Icon(Icons.favorite),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => pizza()),
-                      );
-                    }),
-                Divider(
-                  height: 2.0,
-                ),
-                ListTile(
-                    title: Text('Address'),
-                    leading: Icon(Icons.location_city),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => pizza()),
-                      );
-                    }),
-                Divider(
-                  height: 2.0,
-                ),
-                ListTile(
-                    title: Text(' Change Password'),
-                    leading: Icon(Icons.password_outlined),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => changepass()),
-                      );
-                    }),
-                Divider(
-                  height: 2.0,
-                ),
-                ListTile(
-                    title: Text(' Language'),
-                    leading: Icon(Icons.language),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => pizza()),
-                      );
-                    }),
-                Divider(
-                  height: 2.0,
-                ),
-                ListTile(
-                    title: Text('Your Rating'),
-                    leading: Icon(Icons.rate_review),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => pizza()),
-                      );
-                    }),
-                Divider(
-                  height: 2.0,
-                ),
-                ListTile(
-                    title: Text(' Feedback'),
-                    leading: Icon(Icons.feedback),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => pizza()),
-                      );
-                    }),
-                Divider(
-                  height: 2.0,
-                ),
-                ListTile(
-                    title: Text(' Logout'),
-                    leading: Icon(Icons.logout_rounded),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => login()),
-                      );
-                    }),
-                Divider(
-                  height: 2.0,
-                ),
-              ],
+                  Divider(
+                    height: 2.0,
+                  ),
+
+                  ListTile(
+                      title: Text('My Account'),
+                      leading: Icon(Icons.menu),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => account()),
+                        );
+                      }),
+                  Divider(
+                    height: 2.0,
+                  ),
+                  ListTile(
+                      title: Text('Your order'),
+                      leading: Icon(Icons.arrow_outward_rounded),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => pizza()),
+                        );
+                      }),
+                  Divider(
+                    height: 2.0,
+                  ),
+                  ListTile(
+                      title: Text('Coupons'),
+                      leading: Icon(Icons.local_offer),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => coupons()),
+                        );
+                      }),
+                  Divider(
+                    height: 2.0,
+                  ),
+                  ListTile(
+                      title: Text('Favourite order'),
+                      leading: Icon(Icons.favorite),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => pizza()),
+                        );
+                      }),
+                  Divider(
+                    height: 2.0,
+                  ),
+                  ListTile(
+                      title: Text('Address'),
+                      leading: Icon(Icons.location_city),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => pizza()),
+                        );
+                      }),
+                  Divider(
+                    height: 2.0,
+                  ),
+                  ListTile(
+                      title: Text(' Change Password'),
+                      leading: Icon(Icons.password_outlined),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => changepass()),
+                        );
+                      }),
+                  Divider(
+                    height: 2.0,
+                  ),
+                  ListTile(
+                      title: Text(' Language'),
+                      leading: Icon(Icons.language),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => pizza()),
+                        );
+                      }),
+                  Divider(
+                    height: 2.0,
+                  ),
+                  ListTile(
+                      title: Text('Your Rating'),
+                      leading: Icon(Icons.rate_review),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => pizza()),
+                        );
+                      }),
+                  Divider(
+                    height: 2.0,
+                  ),
+                  ListTile(
+                      title: Text(' Feedback'),
+                      leading: Icon(Icons.feedback),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => pizza()),
+                        );
+                      }),
+                  Divider(
+                    height: 2.0,
+                  ),
+                  ListTile(
+                      title: Text(' Logout'),
+                      leading: Icon(Icons.logout_rounded),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => login()),
+                        );
+                      }),
+                  Divider(
+                    height: 2.0,
+                  ),
+                ],
+              ),
             ),
           ),
         ),
